@@ -25,7 +25,7 @@ public class NPC : MonoBehaviour
     {
         Background.position = Camera.main.WorldToScreenPoint(character.position + Vector3.up * 7f);
         Vector3 pos = Camera.main.WorldToScreenPoint(character.position);
-        pos.y += 175;
+        pos.y += 350;
         Background.position = pos;
     }
 
