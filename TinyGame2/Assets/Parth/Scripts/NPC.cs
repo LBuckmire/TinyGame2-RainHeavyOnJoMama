@@ -48,7 +48,56 @@ public class NPC : MonoBehaviour
                 Triggeredobject.SetActive(true);
             }
             else
-                return;
+            if (gameObject.name == "Picture Frame")
+            {
+                Triggeredobject.SetActive(true);
+            }
+            else
+            if (gameObject.name == "Telephone")
+            {
+                Triggeredobject.SetActive(true);
+            }
+            else
+            if (gameObject.name == "Newspaper")
+            {
+                Triggeredobject.SetActive(true);
+            }
+            else
+            if (gameObject.name == "Letter (4)")
+            {
+                Triggeredobject.SetActive(true);
+            }
+            else
+            if (gameObject.name == "Poster")
+            {
+                Triggeredobject.SetActive(true);
+            }
+            else
+            if (gameObject.name == "Letter (1)")
+            {
+                Triggeredobject.SetActive(true);
+            }
+            else
+            if (gameObject.name == "Wedding Dress")
+            {
+                Triggeredobject.SetActive(true);
+            }
+            else
+            if (gameObject.name == "Empty Champagne Bottle")
+            {
+                Triggeredobject.SetActive(true);
+            }
+            else
+            if (gameObject.name == "Necklace")
+            {
+                Triggeredobject.SetActive(true);
+            }
+            else
+            if (gameObject.name == "Kid's Toy")
+            {
+                Triggeredobject.SetActive(true);
+            }
+            return;
 
         }
 
