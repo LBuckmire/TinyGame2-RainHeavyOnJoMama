@@ -7,6 +7,7 @@ public class DialogSystem : MonoBehaviour
 {
     public Text nametext;
     public Text dialogtext;
+    
 
     public GameObject dialogui;
     public Transform dialogboxui;
@@ -33,13 +34,16 @@ public class DialogSystem : MonoBehaviour
     {
         audiosource = GetComponent<AudioSource>();
         dialogtext.text = "";
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         
     }
+
+    void Update()
+    {
+
+    }
+
+    
+    // Update is called once per frame
 
     public void EnterRangedOfNPC()
     {
@@ -99,7 +103,8 @@ public class DialogSystem : MonoBehaviour
 
             }
             dialogenabled = false;
-            dialogactive = false;
+                     
+           dialogactive = false;
             DropDialog();
         }
     }
@@ -172,4 +177,8 @@ public class DialogSystem : MonoBehaviour
             dialogboxui.gameObject.SetActive(false);
         }
     }
+
+    // When are we tuning it on
+    // Why
+    // What time or state?
 }

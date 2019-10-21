@@ -8,6 +8,8 @@ public class NPC : MonoBehaviour
     public Transform Background;
     public Transform character;
 
+    public GameObject Triggeredobject;
+
     private DialogSystem dialogsystem;
     public string Name;
 
@@ -27,6 +29,7 @@ public class NPC : MonoBehaviour
         Vector3 pos = Camera.main.WorldToScreenPoint(character.position);
         pos.y += 350;
         Background.position = pos;
+
     }
 
     public void OnTriggerStay(Collider other)
@@ -39,7 +42,16 @@ public class NPC : MonoBehaviour
             dialogsystem.Names = name;
             dialogsystem.dialoglines = sentences;
             FindObjectOfType<DialogSystem>().NPCName();
+
+            if (gameObject.name == "Harry")
+            {
+                Triggeredobject.SetActive(true);
+            }
+            else
+                return;
+
         }
+
     }
 
     public void OnTriggerExit()
@@ -47,5 +59,6 @@ public class NPC : MonoBehaviour
         FindObjectOfType<DialogSystem>().Outofrange();
         this.gameObject.GetComponent<NPC>().enabled = false;
     }
+
 
 }
