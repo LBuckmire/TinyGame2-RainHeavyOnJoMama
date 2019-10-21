@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Liam/RAINHEAVY 2-Electric Boogaloo.unity
     guid: f1f754ea3efe2f14d9c4d7536aa0943f
+  - enabled: 1
+    path: Assets/Liam/EndingScene.unity
+    guid: c7d5f26d647cc8c468ed380ccf42617e
   m_configObjects: {}
